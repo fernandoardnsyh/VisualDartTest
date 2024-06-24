@@ -20,7 +20,7 @@ public class WebPage {
     By input_message = By.xpath("//div[@class='sendbird-message-input']//div[@id='sendbird-message-input-text-field']");
     By click_send_message = By.xpath("//button[@data-testid='sendbird-message-input-send-button']");
     By attach_file_message = By.xpath("//button[@class='sendbird-message-input--attach sendbird-iconbutton ']//span[@class='sendbird-iconbutton__inner']//input[@type='file']");
-    By assert_text_message = By.xpath("//div[@class='sendbird-message-content__middle__body-container']//div[@class='sendbird-message-content__middle__message-item-body sendbird-text-message-item-body incoming  ']");
+    By assert_text_message = By.xpath("//div[contains(@data-testid,'sendbird-message-view')]");
     By assert_img_message = By.xpath("//div[@class='sendbird-image-renderer__image']");
     By assert_file_message = By.xpath("//div[@class='sendbird-message-content__middle__message-item-body sendbird-file-message-item-body incoming  ']");
 
@@ -48,7 +48,7 @@ public class WebPage {
         driver.switchTo().newWindow(WindowType.TAB);
         driver.navigate().to("https://sendbird-uikit-react.netlify.app/group_channel?appId=37C8DB25-8B44-435F-A528-5BA9B9965FD0&userId=" + uid + "&nickname=" + nick);
         System.out.println(driver.getCurrentUrl());
-        Thread.sleep(50000);
+        Thread.sleep(3000);
     }
 
     public void assertSuccessCreateUrl(String usrUrl) {
