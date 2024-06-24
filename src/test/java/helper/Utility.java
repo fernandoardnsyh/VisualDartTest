@@ -11,7 +11,7 @@ public class Utility {
 
     public static void startDriver() {
         ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--headless");
+        options.addArguments("--headless"); //setting automation will be run headless/no
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--remote-allow-origins=*");
