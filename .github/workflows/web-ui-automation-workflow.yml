@@ -40,7 +40,7 @@ jobs:
       uses: actions/download-artifact@v4.1.7
       if: always()
       with:
-        name: cucumber-web-report.html
+        name: cucumber-web-report
         path: reports
 
     # Deploy to github pages
