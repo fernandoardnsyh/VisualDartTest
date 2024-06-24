@@ -37,10 +37,10 @@ jobs:
 
     # Archive test result
     - name: Archive Test Result
-      uses: actions/download-artifact@v4.1.7
+      uses: actions/upload-artifact@v4.3.3
       if: always()
       with:
-        name: cucumber-web-report
+        name: Cucumber Report
         path: reports
 
     # Deploy to github pages
