@@ -24,7 +24,7 @@ Feature: Web UI Automation
     Scenario: User A Create and Setup Group Channel with user B
       Given user go to link builder "ufernandotest1111", "nfernandotest1111"
       Then verify user success open url "nfernandotest1111"
-      And create new group channel with add other user "ufernandotest2"
+      And create new group channel with add other user "ufernandotest2222"
 
       @web
       Scenario: User A send message and file to user B
