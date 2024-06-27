@@ -42,3 +42,5 @@ Test Case including
 - User A Create and Setup Group Channel with user B
 - User A send message and file to user B
 - User B receive message and file from user A
+- test
+  
